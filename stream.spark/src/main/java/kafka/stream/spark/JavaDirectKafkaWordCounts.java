@@ -33,7 +33,7 @@ import org.apache.spark.api.java.function.*;
 import org.apache.spark.streaming.api.java.*;
 import org.apache.spark.streaming.kafka.KafkaUtils;
 import org.apache.spark.streaming.Durations;
-import org.apache.spark.examples.streaming.StreamingExamples;
+//import org.apache.spark.examples.streaming.StreamingExamples;
 
 /**
  * Consumes messages from one or more topics in Kafka and does wordcount.
@@ -43,7 +43,7 @@ import org.apache.spark.examples.streaming.StreamingExamples;
  *
  * Example:
  *    $ bin/run-example streaming.JavaDirectKafkaWordCount broker1-host:port,broker2-host:port topic1,topic2
- */
+ **/
 
 public final class JavaDirectKafkaWordCounts {
   private static final Pattern SPACE = Pattern.compile(" ");
@@ -57,7 +57,7 @@ public final class JavaDirectKafkaWordCounts {
       System.exit(1);
     }
 
-    StreamingExamples.setStreamingLogLevels();
+   // StreamingExamples.setStreamingLogLevels();
 
     String brokers = args[0];
     String topics = args[1];
